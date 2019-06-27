@@ -2,54 +2,67 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"  crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Keshna Rana</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+ 
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
-   
-      <div class="header">
-          
-        <a href="#default" class="name">Keshna Rana</a>
-        <div class="header-right">
-          <a class="active" href="index.html">About</a>
-          <a href="contacts.html">Contact</a>
-          <a href="portfolio.html">portfolio</a>
-        </div>
-      </div>
   
-      <div class="width">
-     <div class="content">
+   <div class="row nav"><div class="col-md-6 offset-md-1" >
+    <h2 id="sizeh2"  class="colour">  <a href="#" class="name" >Keshna Rana</a></h2>
+   </div>
+   <div class="col-md-4">
+      <h2 id="sizeh2"><a class="link" href="index.html">About</a> | <a class="link" href="portfolio.html">Portfolio</a> | <a class="link" href="contacts.html">Contact</a> 
+      </h2>
+      </div>
+  </div>
+     
+  
+   <div class="width">
+     <div class="container">
        <h1>Contacts</h1>
        <hr>
-       <form action="/action_page.php">
-        <div class="container">
-                <label ><b>Name</b></label>
-                <input type="text" placeholder="John Smith" name="name" required>
-            <br>
-                <label ><b>Email</b></label>
-                <input type="text" placeholder="example@gmail.com" name="email" required>
-            <br>
-                <label ><b>Message</b></label>
-               
-                <textarea rows = "8" cols = "50" name="Message" >
-                        
-                </textarea>
-         
-                <br>
-                <br>
-          <button type="submit" class="s_btn">Submit</button>
-        </div>
+       <form>
         
-      
+            <div class="row">
+                <div class="col">
+                    <label for="validationDefault01">First name</label>
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                    <label for="validationDefault02">Last name</label>
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
+              <div class="form-group">
+
+            <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+          </div>
+       
+        <button type="submit" class="s_btn">Submit</button>
       </form>
      </div>
+ </div>
+    <footer>
+    <div class="footer">
+    
+       Copyright &copy; 
     </div>
-    <div class="footer"><p>copyright</p>
-    </div>
+   </footer>
+
 </body>
 
 </html>
